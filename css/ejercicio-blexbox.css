@@ -1,0 +1,32 @@
+.contenedor{
+
+width: 90%;
+max-width: 600px;  
+height: 500px;
+outline: 2px solid crimson;
+margin: 20px auto;
+display: flex;
+}
+
+.item{
+
+width: 100px;
+height: 100px;
+color: white;
+text-align: center;
+font-family: sans-serif;
+line-height: 100px;
+background: darkcyan;
+}
+
+.item2{
+    background: lightcoral;
+}
+
+.item3{
+    background: yellowgreen;
+}
+
+.item4{
+    background: orchid;
+}
