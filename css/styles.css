@@ -1,101 +1,89 @@
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- /*outline: 1px solid red;*/
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*outline: 1px solid red;*/
 }
 
-body{
- background: #f2f2f2;
- font-family: sans-serif;
-
+body {
+  background: #f2f2f2;
+  font-family: sans-serif;
 }
 
-.contenedor{
- width: 90%;
- height: 100vh;
- margin: 0 auto;
- overflow: hidden;
- display: flex;
- flex-direction: column;  
- justify-content: center;
- align-items: center;
+.contenedor {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.contenedor-vector{
- 
- margin-bottom: 1em;
- display: flex;
- max-height: 55%;
- min-width: 90%;
- justify-content: center;
- align-self: stretch;
+.contenedor-vector {
+  margin-bottom: 1em;
+  display: flex;
+  max-height: 55%;
+  min-width: 90%;
+  justify-content: center;
+  align-self: stretch;
 }
 
-.vector{
-    align-self: self-end;
-    display: block;
+.vector {
+  align-self: self-end;
+  display: block;
+  width: 90%;
+  max-height: 90%;
+}
+
+.textos {
+  flex-basis: 40%;
+}
+
+.parrafo {
+  line-height: 1.5;
+  font-weight: 300;
+  padding: 0.7em 0;
+}
+
+.boton {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background: slateblue;
+  padding: 20px 30px;
+}
+
+@media screen and (min-width: 850px), (aspect-ratio: 16/10) {
+  .contenedor {
     width: 90%;
-    max-height: 90%;
-}
-
-.textos{
-
- flex-basis: 40%;
-
-}
-
-.parrafo{
-    
- line-height: 1.5;
- font-weight: 300;
- padding: .7em 0;
-
-}
-
-.boton{
- display: inline-block;
- color:#fff;
- text-decoration: none;
- background: slateblue;
- padding: 20px 30px;
-
-}
-
-@media screen and (min-width: 850px) {
-    .contenedor {
-        width: 90%;
- height: 100vh;
- margin: 0 auto;
- overflow: hidden;
- display: flex;
- justify-content: center;
- align-items: center;
-      flex-direction:row;
-    }
-
-
-    .contenedor-vector{
-
-        max-height: 90%;
-        align-self: center;      
-        margin-bottom: 0;
-        margin-right: 1em;
-
-        display: flex;
-        max-width: 27%;
-        min-width: 27%;
-        justify-content:end;
-       }
-       
-       .vector{
-        align-self: center;
-        display: block;
-        width: 100%;
-        max-height: 100%;
-        flex-basis: 200px;
-       }
-
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
-  
+
+  .contenedor-vector {
+    max-height: 90%;
+    align-self: center;
+    margin-bottom: 0;
+    margin-right: 1em;
+
+    display: flex;
+    max-width: 27%;
+    min-width: 27%;
+    justify-content: end;
+  }
+
+  .vector {
+    align-self: center;
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    flex-basis: 200px;
+  }
+}
