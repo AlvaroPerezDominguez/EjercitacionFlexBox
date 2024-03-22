@@ -56,10 +56,7 @@ body {
 }
 
 @media screen and (min-width: 850px),
-  (max-height: 440px),
-  (aspect-ratio: 16/10),
-  (aspect-ratio: 16/9),
-  (aspect-ratio: 3/2) {
+  (max-height: 440px),(orientation: landscape) {
   .contenedor {
     width: 90%;
     height: 100vh;
